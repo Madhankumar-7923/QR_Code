@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="container">
+
+            <div class="header-container">
+                <h1>QR Code Generator</h1>
+                <p>Generate QR Code By using URL / Text</p>
+            </div>
+
+            <form action="/qr-gen" method="post" id="form-box">
+                <label for="url">Enter The URL</label>
+                <input type="text" name="url" id="url" placeholder="Text/ URL" required autofocus autocomplete="off">
+                <label for="filename">File Name Without Extension</label>
+                <input type="text" name="filename" id="filename" placeholder="File Name" required autofocus
+                    autocomplete="off">
+                <button type="submit" id="button">Generate</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

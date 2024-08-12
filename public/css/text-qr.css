@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+    background: linear-gradient(90deg, rgb(210, 102, 168) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    width: 500px;
+
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    background: rgba(228, 228, 228, 0.2);
+}
+
+.header-container {
+    margin-bottom: 20px;
+}
+
+.header-container h1 {
+    margin: 0 0 10px;
+    color: rgb(125, 63, 184);
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.output #download_btn {
+    margin: 20px 0;
+    padding: 15px;
+
+    border-radius: 10px;
+
+    width: 300px;
+
+    font-size: 15px;
+    
+    background-color: rgb(125, 63, 184);
+    color: white;
+
+    cursor: pointer;
+}
+
+#home_btn{
+    
+    padding: 15px;
+
+    border-radius: 10px;
+
+    width: 300px;
+
+    font-size: 15px;
+    
+    background-color: rgb(125, 63, 184);
+    color: white;
+
+    cursor: pointer;
+}
+
+@media screen and (max-width: 578px) {
+
+    .container {
+        width: 300px;
+        padding: 10px;
+    }
+
+    .header-container h1 {
+        font-size: 28px;
+    }
+
+   #download-btn{
+    width: 200px;
+   }
+
+}
