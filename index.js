@@ -11,9 +11,11 @@ const port = 3000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// set the public files directory
 app.use(express.static(path.join(__dirname, 'public')));
+
 app.set('view engine', 'ejs');
 
 // Set the views directory
