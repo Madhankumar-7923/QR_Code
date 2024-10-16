@@ -44,6 +44,10 @@ app.post("/qr-gen", (req, res) => {
 
 });
 
+app.get("*", (req, res) => {
+    res.render("error.ejs", { title: "404 - Page Not Found" });
+});
+
 app.listen(port, () => {
     console.log(`Server Started in port ${port}`);
 });

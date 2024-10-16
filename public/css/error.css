@@ -1,0 +1,12 @@
+.main-error{
+    margin-top: 40px;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.main-error h2{
+    color: rgb(0, 0, 0);
+
+    font-size: 30px;
+}
